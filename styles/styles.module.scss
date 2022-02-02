@@ -1,21 +1,131 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Martel:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .container {
-  padding: 0 2rem;
+  background-color: #F4F4F4;
+  max-width: 100vw;
+  @extend .noselect;
 }
 
 .main {
-  min-height: 100vh;
-  width: 70vw;
-  min-width: 640px;
-  padding: 5vh 8vw;
+  height: 100vh;
   margin: auto;
+  padding-bottom: 2vh;
   flex: 1;
   display: flex;
   flex-direction: column;
   background-color: #F4F4F4;
-  color: #333;
+}
+
+
+// helper
+.nowrap {
+  white-space: nowrap;
+  overflow: hidden !important;
+}
+
+.me {
+  padding: 0.5rem 2rem;
+  font-family: 'Bitter', serif;
+  font-weight: 400;
+  font-size: 12vw;
+  line-height: 12vw;
+  letter-spacing: 0;
+  color:  #333;
+  @extend .nowrap;
+}
+
+.bebas {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 3.4vw;
+  font-weight: 900;
+  color: rgb(35, 35, 35);
+}
+
+.catalogs {
+  margin-top: auto;
+}
+
+.catalog {
+  position: relative;
+  margin-top: 2vh;
+  @extend .nowrap;
+}
+
+.catalog > * {
+  @extend .nowrap;
+}
+
+.catalog li {
+  display: inline-block;
+}
+
+.catalog ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalogName {
+  position: absolute;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 300;
+  font-size: 4vw;
+  letter-spacing: 0.5vw;
+  line-height: 3.5vw;
+  animation: move 60s linear infinite;
+  @extend .nowrap;
+  margin: 0 auto;
+  text-shadow: 0.1vw 0.1vw rgb(120, 0, 0);
+}
+
+.catalogName2 {
+  @extend .catalogName;
+  position: relative;
+  display: inline-block;
+  animation-delay: 30s;
+  transform: translateX(100%);
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+.catalogName > li {
+  margin-right: 7rem;
+}
+
+.catalogName li:hover {
+  transform: scale(1.05);
+  transition: 0.1s;
+}
+
+.catalog:hover {
+  color: rgb(221, 0, 0);
+}
+
+.catalogWords {
+  font-family: 'Bitter', serif;
+  font-weight: 200;
+  font-size: 2vw;
+  letter-spacing: -0.06vw;
+}
+
+.catalogWords > li {
+  margin-right: 10rem;
+}
+
+.catalogWords li:hover {
+  transform: scale(0.95);
+  transition: 0.1s;
+}
+
+.header {
+  min-height: 10vh;
 }
 
 .hoverimg {
@@ -34,13 +144,6 @@
   height: 30vh;
 }
 
-.me {
-  display: flex;
-  margin-left: auto;
-  flex-direction: column;
-  font-family: 'Heebo', sans-serif;
-  width: fit-content;
-}
 
 
 .noselect {
@@ -55,12 +158,13 @@
 .metext {
   @extend .noselect;
   margin: 0;
-  line-height: 1.3;
-  font-size: 3rem;
+  line-height: 1.2;
+  font-size: 6rem;
   margin-left: auto;
   text-align: right;
   width: fit-content;
-  font-family: 'Martel', serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
 }
 
 .metext:hover ~ img.hoverimg {
