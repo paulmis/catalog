@@ -1,21 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=EB+Garamond:ital,wght@0,400;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 .container {
-  background-color: #F4F4F4;
+  background-color: #f5f5f5;
   max-width: 100vw;
-  @extend .noselect;
+  z-index: 0;
 }
 
 .main {
   height: 100vh;
   margin: auto;
   padding-bottom: 2vh;
-  flex: 1;
   display: flex;
   flex-direction: column;
-  background-color: #F4F4F4;
 }
-
 
 // helper
 .nowrap {
@@ -24,35 +20,35 @@
 }
 
 .me {
-  padding: 0.5rem 2rem;
-  font-family: 'Bitter', serif;
+  margin-left: 60vw;
+  width: fit-content;
+  padding: 2vh;
+  font-family: 'EB Garamond', serif;
   font-weight: 400;
-  font-size: 12vw;
-  line-height: 12vw;
-  letter-spacing: 0;
-  color:  #333;
+  font-size: 2.5vw;
+  line-height: 2.5vw;
+  letter-spacing: 0.1vw;
+  color:  #282828;
   @extend .nowrap;
+  z-index: 1;
 }
 
 .bebas {
-  font-family: 'Bebas Neue', sans-serif;
-  letter-spacing: 3.4vw;
+  font-family: 'Lato', sans-serif;
   font-weight: 900;
-  color: rgb(35, 35, 35);
+  font-size: 8vw;
+  line-height: 8vw;
 }
 
 .catalogs {
-  margin-top: auto;
+  margin-top: 15vh;
 }
 
 .catalog {
   position: relative;
   margin-top: 2vh;
   @extend .nowrap;
-}
-
-.catalog > * {
-  @extend .nowrap;
+  @extend .noselect;
 }
 
 .catalog li {
@@ -68,22 +64,18 @@
 .catalogName {
   position: absolute;
   font-family: 'Bebas Neue', sans-serif;
-  font-weight: 300;
   font-size: 4vw;
   letter-spacing: 0.5vw;
   line-height: 3.5vw;
-  animation: move 60s linear infinite;
+  animation: move 90s linear infinite;
   @extend .nowrap;
-  margin: 0 auto;
-  text-shadow: 0.1vw 0.1vw rgb(120, 0, 0);
 }
 
 .catalogName2 {
   @extend .catalogName;
   position: relative;
   display: inline-block;
-  animation-delay: 30s;
-  transform: translateX(100%);
+  animation-delay: 45s;
 }
 
 @keyframes move {
@@ -111,12 +103,13 @@
 .catalogWords {
   font-family: 'Bitter', serif;
   font-weight: 200;
-  font-size: 2vw;
+  font-size: 1.8vw;
   letter-spacing: -0.06vw;
+  transform: translateX(-2%);
 }
 
 .catalogWords > li {
-  margin-right: 10rem;
+  margin-right: 10vw;
 }
 
 .catalogWords li:hover {
@@ -138,14 +131,6 @@
   margin: 2vmin 0;
 }
 
-.section2 {
-  display: flex;
-  align-items: start;
-  height: 30vh;
-}
-
-
-
 .noselect {
   -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -155,56 +140,12 @@
             user-select: none;
 }
 
-.metext {
-  @extend .noselect;
-  margin: 0;
-  line-height: 1.2;
-  font-size: 6rem;
-  margin-left: auto;
-  text-align: right;
-  width: fit-content;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
-}
-
-.metext:hover ~ img.hoverimg {
-  visibility: 'visible';
-  opacity: 0.8;
-  transform: scale(1.05);
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.sectiontitle {
-  @extend .noselect;
-  margin: 0;
-  line-height: 1;
-  font-size: 5rem;
-  transition: 0.1s;
-  width: fit-content;
-}
-
-.sectiontitle:hover {
-  letter-spacing: 0.4vw;
-  text-decoration: underline dotted #444;
-}
-
-.sectiontitle:hover ~ .sectiontitle {
-  font-size: 4rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.blob {
+  position: absolute;
+  background: linear-gradient(.25turn, #f5f5f5, 20%, #fff);
+  margin-top: 10vh;
+  margin-left: 8vw;
+  height: 90vh;
+  width: 32vw;
+  z-index: 0;
 }

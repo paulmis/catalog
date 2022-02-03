@@ -13,32 +13,25 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <div className={`${styles.me} ${styles.nowrap}`}>
-          PA
-          <span className={styles.bebas}>UL </span>
-          MI
-          <span className={styles.bebas}>STERKA</span>
+        <div className={styles.blob}>
+          
         </div>
-        <section className={styles.visual}>
-
-
-        </section>
         <section className={styles.catalogs}>
           <section id='blog' className={styles.catalog}>
             <div className={styles.scrollWrapper}>
               <ul className={styles.catalogName}>
-                <li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li>
+                <li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li>
               </ul>
               <ul className={styles.catalogName2}>
-                <li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li>
+                <li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li>
               </ul>
             </div>
             
             <ul className={styles.catalogWords}>
-              <li>convince</li>
+              <li><a href="https://thinkingthrough.substack.com/p/dont-do-interviews-do-discussions" target="_blank">convince</a></li>
               <li>writing</li>
               <li>thoughts</li>
-              <li>convey</li>
+              <li><a href="https://productivityhub.org/2019/04/19/how-to-deliver-constructive-feedback-in-difficult-situations/" target="_blank">convey</a></li>
               <li>action</li>
               <li>meaning</li>
               <li>language</li>
@@ -46,10 +39,10 @@ const Home: NextPage = () => {
           </section>
           <section id='projects' className={styles.catalog}>
             <ul className={styles.catalogName}>
-              <li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li>
+              <li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li>
             </ul>
             <ul className={styles.catalogName2}>
-              <li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li>
+              <li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li>
             </ul>
             <ul className={styles.catalogWords}>
               <li>creative</li>
@@ -62,6 +55,12 @@ const Home: NextPage = () => {
             </ul>
           </section>
         </section>
+
+        <div className={`${styles.me} ${styles.nowrap}`}>
+          from Paul Misterka
+        </div>
+
+        
       </main>
     </div>
   )
