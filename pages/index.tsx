@@ -13,54 +13,79 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <div className={styles.blob}>
-          
-        </div>
-        <section className={styles.catalogs}>
-          <section id='blog' className={styles.catalog}>
-            <div className={styles.scrollWrapper}>
-              <ul className={styles.catalogName}>
-                <li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li>
+        <section className={styles.general}>
+          <section className={styles.splitter}>
+            <section id={styles.about} className={styles.part2}>
+              <h1>》 Paul Misterka</h1>  
+              Competetive programming, robotics, scraping, algorithmic trading. I like building robots and large systems that efficiently handle massive amounts of data from ground up. Interested in startups and engaged in all sorts of projects ever since secondary school.
+              <h3>Selected projects:</h3>
+              <ul>
+                <li>
+                  <h4>DSF - desktop scraping framework</h4>
+                  <p>Easily detect and describe desktop UIs to scrape any data in real time</p>
+                </li>
+                <li>
+                  <h4><a href="https://github.com/paulmis/pocre" target="_blank">pocre - precise OCR engine</a></h4>
+                  <p>Deterministic OCR engine for scraping highly regular, computer-generated text with supervised traning and stellar performance.</p>
+                </li>
+                <li>
+                  <h4><a href="https://github.com/paulmis/beepboop3000" target="_blank">bb3 - SLAM-based autonomous vehicle</a></h4>
+                  <p>Using ros2 and computer vision beepboop3000 can reconstruct its surroundings, and fulfill a variety of tasks.</p>
+                </li>
+                <li>
+                  <h4>APA - autonomous precision agriculture</h4>
+                  <p>Concepts for full agricultural automation using IoT devices and drones.</p>
+                </li>
               </ul>
-              <ul className={styles.catalogName2}>
-                <li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li><li>BLOG</li>
+            </section>
+            <section id={styles.previous} className={styles.part2}>
+              <h1 id={styles.hider}>&nbsp;</h1>
+              <ul>
+                <li>
+                  <h4>Sep 22 - Jan 23, <i>China</i></h4>
+                  <h3>Shanghai Jiao Tong - Bsc. Computer Science minor</h3>
+                  <p>I'll be attaining experience with the Asian markets, manufacturing and education systems. During the programme I hope to work on open-source software with colleagues from China and the rest of the world.</p>
+                </li>
+                <li>
+                  <h4>Sep 20 - Jun 23, the <i>Netherlands</i></h4>
+                  <h3>TU Delft - Bsc. Computer Science & Engineering</h3>
+                  <p>Pursuing a degree with emphasis on emedded systems and robotics. I've been leading projects developing autonomous robots, e2e services, distributed systems, IoT devices, and scrapers based on visual input.</p>
+                </li>
               </ul>
-            </div>
-            
-            <ul className={styles.catalogWords}>
-              <li><a href="https://thinkingthrough.substack.com/p/dont-do-interviews-do-discussions" target="_blank">convince</a></li>
-              <li>writing</li>
-              <li>thoughts</li>
-              <li><a href="https://productivityhub.org/2019/04/19/how-to-deliver-constructive-feedback-in-difficult-situations/" target="_blank">convey</a></li>
-              <li>action</li>
-              <li>meaning</li>
-              <li>language</li>
-            </ul>
-          </section>
-          <section id='projects' className={styles.catalog}>
-            <ul className={styles.catalogName}>
-              <li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li>
-            </ul>
-            <ul className={styles.catalogName2}>
-              <li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li><li>PROJECTS</li>
-            </ul>
-            <ul className={styles.catalogWords}>
-              <li>creative</li>
-              <li>fun</li>
-              <li>change</li>
-              <li>interconnections</li>
-              <li>people</li>
-              <li>anger</li>
-              <li>initiative</li>
-            </ul>
+            </section>
           </section>
         </section>
-
-        <div className={`${styles.me} ${styles.nowrap}`}>
-          from Paul Misterka
-        </div>
-
-        
+        <section id={styles.skills}>
+          <section className={styles.splitter}>
+            <section id={styles.languages} className={styles.part3}>
+              <h3>Languages</h3>
+              <ul>
+                <li><b>OOP:</b> C++, Java</li>
+                <li><b>embedded systems:</b> C, asm</li>
+                <li><b>scripting:</b> Python, bash</li>
+                <li><b>db:</b> PostgreSQL, MongoDB, Arctic</li>
+                <li><b>web:</b> js, ts, scss</li>
+                <li><b>functional:</b> Scala</li>
+              </ul>
+            </section>
+            <section className={styles.part3}>
+              <h3>Frameworks, services</h3>
+              <ul>
+                <li><b>web:</b> node.js, next.js, wordpress</li>
+                <li><b>cloud:</b> AWS, DigitalOcean</li> 
+                <li><b>visual recognition:</b> OpenCV, Tesseract</li>
+                <li><b>microservices:</b> Kafka</li>
+                <li><b>contenerization:</b> Docker</li>
+                <li><b>robotics:</b> ROS2</li>
+                <li><b>testing:</b> JUnit, Mockito, PiTest</li>
+                <li><b>desktop:</b> Win32 API</li>
+              </ul>
+            </section>
+          </section>
+        </section>
+        <section className={styles.general}>
+          
+        </section>
       </main>
     </div>
   )
